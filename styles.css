@@ -1,0 +1,314 @@
+body{
+    background-color: rgba(0, 0, 0, 0.808);
+    background-size: 100%;
+    line-height: 1.0;
+    height: 80%;
+    width: 1365px;
+    margin: auto;
+}
+
+.menu1 {
+    padding: 0px 0px;
+    margin-top: 0;
+    border-radius: 0px;
+    opacity: 0.7;
+    margin-bottom: 0px;
+}
+.imagen {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("pronta1.jpg");
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    height: 290px;
+    background-repeat: repeat;
+    margin-top: 20px;
+}
+#menu {
+    width: 1323px;
+    margin: 4px auto;
+    border: 1px rgba(0, 0, 0, 0.363);
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 80, 0.863), rgba(7, 7, 7, 0.719));
+    border-radius: 10px;
+    zoom: 1;
+}
+/*Menu Principal*/
+#menu:before, #menu:after{
+    content: "";
+    display: table;
+}
+/*Organização do Menu Principal*/
+#menu:after {
+    clear: both;
+}
+/*Organização do Menu Princiapl*/
+#menu li {
+    float: left;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+    list-style: none;
+}
+/* Menu dos principais textos que forem links em Azul*/
+#menu a {
+    float:left;
+    padding: 12px 30px;
+    color: rgb(9, 145, 111);
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 2px 0 rgb(0, 0, 0);
+}
+/* efeito no link */
+#menu li:hover > a { 
+        color: #fdfdfd;
+}
+/*Organiza o Menu ordenando os submenus*/
+#menu ul {
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 1;
+    background: rgb(73, 75, 97);
+    background: linear-gradient(rgb(38, 38, 85), #111);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, .3);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+
+}
+/* Visualizar os sub Menus*/
+#menu li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    box-shadow: -1px 0 0 rgba(255, 255, 255, .3);
+}
+
+/*Tira os Riscos dos Sub menus*/
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;    
+    box-shadow: 0 1px 0 rgba(17, 17, 17, 0), 0 2px 0 rgba(0, 0, 0, 0);
+}
+/*??*/
+#menu ul li:last-child {   
+    box-shadow: none;
+}
+/* Organiza os sub menus que são links*/
+#menu ul a {
+    padding: 10px;
+    width: 145px;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+/*Configuração da fonte H1*/
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: normal;
+    text-decoration-color: #fdfdfd;
+    text-shadow: 1px 1px 5px rgb(243, 244, 248);
+    text-align: center;
+}
+/*Pagina inicial Historico foto + Testo */
+.historico {
+    display: table;
+    text-align: left;
+    
+}
+/*Foto Perfil da pagina inicial*/
+.foto {
+    display: table-cell;
+    float: left;
+    margin-left: 10px;
+    border-radius: 10px;
+
+}
+/*Texo da Pagina inicial*/
+.texto {
+    font-family: 'Ovo', serif;
+    font-size: 30px;
+    display: table-cell;
+    float: left;
+    width: 1020px ;
+    margin-top: -35px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 4px black;
+}
+/*configuração da fonte h3*/
+h3 {
+    background-color: rgba(0, 0, 0, 0.363);
+    margin-top: 0%;
+    width: 750px auto;
+    text-align: left;
+    padding: 5%;
+    font-family: 'Ovo', serif;
+    font-size: 27px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 10px rgb(243, 244, 248);
+   
+          
+}
+/*Configuração do artigo*/
+article {
+    font-family: 'Ovo', serif;
+    text-align: center;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(211, 151, 181);
+    background-color: rgba(185, 72, 185, 0.253);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.amigos {
+    background-color: rgba(3, 9, 63, 0.548);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(0, 2, 3);
+    font-weight: bold;
+    
+}
+.amigosimagen{
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("amigos.jpg");
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    height: 1000px;
+    background-repeat: repeat;
+    margin-top: 20px;
+}
+.Ciclismo {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("ciclismo.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 185px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.Corrida {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("Corrida.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 185px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.Roller {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("Patinacao.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 185px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+h2 {
+    
+    font-family: 'Ovo', serif;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+/*colocar as imagens jogos lado a lado*/
+
+.coluna {
+    background-color:rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    float: left;
+    width: 33%;
+    text-align: center;
+    height: 300px;
+}
+.jogos:after {
+    content: "";
+    clear:both;
+    display: tables;
+}
+
+.viajartexto {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    height: 300px auto;
+    border-radius: 30px;
+    font-family: 'Ovo', serif;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+.pets {
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.formacao {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 0px auto;
+    height: 100px auto;
+    border-radius: 30px;
+    font-family: 'Ovo', serif;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+.carreira{
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 0px auto;
+    height: 100px auto;
+    border-radius: 30px;
+    font-family: 'Ovo', serif;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+.contato {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    width: 600px;
+    margin: 80px auto;
+    height: 100px auto;
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+}
